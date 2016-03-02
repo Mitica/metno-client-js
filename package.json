@@ -1,0 +1,32 @@
+{
+  "name": "yrno-client",
+  "version": "0.0.1",
+  "description": "yr.no node.js client",
+  "main": "./lib/client.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha -R spec -t 15000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mitica/yrno-client-js.git"
+  },
+  "keywords": [
+    "yr.no",
+    "client",
+    "yrno",
+    "weather"
+  ],
+  "author": "Dumitru Cantea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mitica/yrno-client-js/issues"
+  },
+  "homepage": "https://github.com/Mitica/yrno-client-js#readme",
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "request": "^2.69.0",
+    "xml2js": "^0.4.16"
+  }
+}
