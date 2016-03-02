@@ -1,6 +1,6 @@
 {
   "name": "yrno-client",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "yr.no node.js client",
   "main": "./lib/client.js",
   "scripts": {
