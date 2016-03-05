@@ -1,27 +1,31 @@
 {
-  "name": "yrno-client",
+  "name": "metno-client",
   "version": "0.1.0",
-  "description": "yr.no node.js client",
+  "description": "met.no node.js client",
   "main": "./lib/client.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha -R spec -t 15000"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mitica/yrno-client-js.git"
+    "url": "git+https://github.com/Mitica/metno-client-js.git"
   },
   "keywords": [
+    "met.no",
+    "metno",
     "yr.no",
     "client",
     "yrno",
-    "weather"
+    "weather",
+    "forecast",
+    "api"
   ],
   "author": "Dumitru Cantea",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Mitica/yrno-client-js/issues"
+    "url": "https://github.com/Mitica/metno-client-js/issues"
   },
-  "homepage": "https://github.com/Mitica/yrno-client-js#readme",
+  "homepage": "https://github.com/Mitica/metno-client-js#readme",
   "devDependencies": {
     "mocha": "^2.4.5"
   },

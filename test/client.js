@@ -24,6 +24,7 @@ describe('Client', function() {
 			request: { timeout: 6000 }
 		}, function(error, data) {
 			assert.ok(data);
+			assert.ok(40, data.time.length);
 			done();
 		});
 	});
@@ -34,9 +35,11 @@ describe('Client', function() {
 				lon: 6.2597
 			},
 			request: { timeout: 4000 },
-			version: 1.9
+			version: 1.9,
+			days: 2
 		}, function(error, data) {
 			assert.ok(data);
+			assert.equal(8, data.time.length);
 			done();
 		});
 	});
