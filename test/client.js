@@ -24,7 +24,7 @@ describe('Client', function() {
 			request: { timeout: 6000 }
 		}, function(error, data) {
 			assert.ok(data);
-			assert.ok(40, data.time.length);
+			assert.ok(40, data.times.length);
 			done();
 		});
 	});
@@ -39,7 +39,7 @@ describe('Client', function() {
 			days: 2
 		}, function(error, data) {
 			assert.ok(data);
-			assert.equal(8, data.time.length);
+			assert.equal(8, data.times.length);
 			done();
 		});
 	});
