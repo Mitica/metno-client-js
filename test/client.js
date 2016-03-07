@@ -31,8 +31,8 @@ describe('Client', function() {
 	it('should get report data with params, options & version', function(done) {
 		client.getWeather({
 			params: {
-				lat: 53.3478,
-				lon: 6.2597
+				lat: 67.5000,
+				lon: 51.8667
 			},
 			request: { timeout: 4000 },
 			version: 1.9,
