@@ -64,4 +64,12 @@ describe('Client', function() {
 			done();
 		});
 	});
+	it('should get yr xml', function(done) {
+		apiRequest({
+			url: 'http://www.yr.no/place/Russia/Nenetsia/Nizhnyaya_Kamenka/forecast.xml'
+		}, function(error, data) {
+			assert.ok(data);
+			done();
+		});
+	});
 });
