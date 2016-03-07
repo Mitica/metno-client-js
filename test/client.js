@@ -21,7 +21,7 @@ describe('Client', function() {
 				lat: 53.3478,
 				lon: 6.2597
 			},
-			request: { timeout: 6000 }
+			request: { timeout: 15000 }
 		}, function(error, data) {
 			assert.ok(data);
 			assert.ok(40, data.times.length);
@@ -34,12 +34,24 @@ describe('Client', function() {
 				lat: 67.5000,
 				lon: 51.8667
 			},
-			request: { timeout: 4000 },
+			request: { timeout: 15000 },
 			version: 1.9,
 			days: 2
 		}, function(error, data) {
 			assert.ok(data);
 			assert.equal(8, data.times.length);
+			done();
+		});
+	});
+	it('should get weather icon', function(done) {
+		client.api.weathericon({
+			params: {
+				symbol: 5,
+				content_type: 'image/png'
+			},
+			request: { timeout: 15000 }
+		}, function(error, data) {
+			assert.ok(data);
 			done();
 		});
 	});
