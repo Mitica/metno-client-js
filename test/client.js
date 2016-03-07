@@ -2,6 +2,7 @@
 
 var assert = require('assert');
 var client = require('../lib/client');
+var apiRequest = require('../lib/api_request');
 
 describe('Client', function() {
 	it('should get report data with params', function(done) {
@@ -50,6 +51,14 @@ describe('Client', function() {
 				content_type: 'image/png'
 			},
 			request: { timeout: 15000 }
+		}, function(error, data) {
+			assert.ok(data);
+			done();
+		});
+	});
+	it('should get reuters homepage', function(done) {
+		apiRequest({
+			url: 'http://www.reuters.com/'
 		}, function(error, data) {
 			assert.ok(data);
 			done();
